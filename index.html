@@ -50,6 +50,25 @@
                     <div class='custom-control custom-radio'><input id="stuffed" class="custom-control-input"type="radio" name="crust" value="1500"><label class="custom-control-label" for="stuffed">Stuffed - 1500 rwf</label></div>
                     <div class='custom-control custom-radio'><input id="glutten-free" class="custom-control-input" type="radio" name="crust" value="1500"><label class="custom-control-label" for="glutten-free">Glutten-free - 1500 rwf</label></div>
                 </div><br>
+                <div class="form-group mb-4" id="toppings">
+                    <div id="small-toppings">
+                        <label>Please do choose the toppings for your small pizza</label><br>
+                        <div class='custom-control custom-checkbox'><input class="custom-control-input" id="salad" type="checkbox" name="topping" value="500" ><label class="custom-control-label" for="salad">Salad - 500 rwf</label></div>
+                        <div class='custom-control custom-checkbox'><input class="custom-control-input" id="sauce" type="checkbox" name="topping" value="800"><label class='custom-control-label' for='sauce'>Sauce - 800 rwf</label></div>
+                    </div>
+                    <div id="medium-toppings">
+                        <label>Please do choose the toppings for your medium pizza</label><br>
+                        <input id="salad" type="checkbox" name="topping" value="700" ><label for="salad">Salad - 700 rwf</label><br>
+                        <input id="sauce" type="checkbox" name="topping" value="1200"><label for="sauce">Sauce - 1200 rwf</label><br>
+                    </div>
+                    <div id="large-toppings">
+                            <label>Please do choose the toppings for your large pizza</label><br>
+                            <input id="salad" type="checkbox" name="topping" value="1000" ><label for="salad">Salad - 1000 rwf</label><br>
+                            <input id="sauce" type="checkbox" name="topping" value="1500"><label for="sauce">Sauce - 1500 rwf</label><br>
+                    </div>
+                </div>
+                <button class="btn btn-outline-success"type="submit" id="submit">Comfirm your order</button><br>
+                <div id="output"></div>
             </form>
         </div>
     </div>
