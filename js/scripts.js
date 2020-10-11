@@ -18,6 +18,9 @@ var ordersArr=[];
 //user-interface logic
 
 $(document).ready(function(){
+    $('#order').click(function(){
+        $('#new-orders').slideUp();
+    });
     $('#new-orders').on('change','#size',function(){
         if($('#size').val()=='1500'){
             $('#small-toppings').show();
@@ -91,18 +94,18 @@ $(document).ready(function(){
         '<div class="form-group mb-4">' +
             '<div id="small-toppings" class="form-group mb-4">' +
                 '<label>Please do choose the toppings for your small pizza</label><br>' +
-                '<div class="custom-control custom-checkbox"><input id="salad" class="custom-control-input" type="checkbox" name="topping" value="500" > <label class="custom-control-label" for="salad">Salads - 1000 rwf</label></div>' +
-                '<div class="custom-control custom-checkbox"><input id="sauce" class="custom-control-input" type="checkbox" name="topping" value="800" > <label class="custom-control-label" for="sauce">Sauce - 1500 rwf</label></div>' +
+                '<div class="custom-control custom-checkbox"><input id="salad" class="custom-control-input" type="checkbox" name="topping" value="500" > <label class="custom-control-label" for="salad">Vegetable - 1000 rwf</label></div>' +
+                '<div class="custom-control custom-checkbox"><input id="sauce" class="custom-control-input" type="checkbox" name="topping" value="800" > <label class="custom-control-label" for="sauce">Sausage - 1500 rwf</label></div>' +
             '</div>' +
             '<div id="medium-toppings" class="form-group mb-4">' +
                 '<label>Please do choose the toppings for your medium pizza</label><br>' +
-                '<input id="salad" type="checkbox" name="topping" value="700"> <label  for="salad">Salads - 700 rwf</label><br>'+
-                '<input id="sauce" type="checkbox" name="topping" value="1200"> <label  for="sauce">Sauce - 1200 rwf</label><br>'+
+                '<input id="salad" type="checkbox" name="topping" value="700"> <label  for="salad">Vegetable - 700 rwf</label><br>'+
+                '<input id="sauce" type="checkbox" name="topping" value="1200"> <label  for="sauce">Sausage - 1200 rwf</label><br>'+
             '</div>' +
             '<div id="large-toppings" class="form-group mb-4">' +
                 '<label>Please do choose the toppings for your large pizza</label><br>' +
-                '<input id="salad" type="checkbox" name="topping" value="1000"> <label for="salad">Salads - 1000 rwf</label><br>'+
-                '<input id="sauce"  type="checkbox" name="topping" value="1500"> <label for="sauce">Sauce - 1500 rwf</label><br>' +
+                '<input id="salad" type="checkbox" name="topping" value="1000"> <label for="salad">Vegetable - 1000 rwf</label><br>'+
+                '<input id="sauce"  type="checkbox" name="topping" value="1500"> <label for="sauce">Sausage - 1500 rwf</label><br>' +
             '</div>' +
         '</div>' +
         '<button class="btn btn-outline-success" type="submit" id="submit">Comfirm your order</button><br>' +
