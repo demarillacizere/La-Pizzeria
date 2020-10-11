@@ -11,3 +11,37 @@ h1{position:relative;
     padding:20px;
     color:white;
 }
+.grid{
+    display:flex;
+    justify-content: space-evenly;
+}
+.div1{
+    background-image: url('img/Pizza salad.jpg');
+}
+.div2{
+    background-image: url('img/pizzaheart.jpg');
+}
+.div3{
+    background-image: url('img/pizza2.jpeg');
+}
+.div4{
+    background-image: url('img/Pizzameat.jpg');
+}
+.div5{
+    background-image: url('img/pizza2.jpeg');
+}  
+.div6{
+    background-image: url('img/pizzaingredients.jpg');
+}  
+.div7{
+    background-image: url('img/Pizza1.jpg');
+}
+.grid div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:250px;
+    height:150px;
+}
+h2,h4,button{
+    color:rgb(255, 126, 6);
+}
