@@ -25,7 +25,7 @@ Louise Demarillac IZERE
 - Upon clicking the checkout button the user chooses if the order will be delivered or not and then is shown the total charges for all the orders he made.   
 ## Known Bugs
 There are no known bugs
-#### Link to live site : https://demarillacizere.github.io/La-pizzeria/
+#### Link to live site : https://demarillacizere.github.io/La-Pizzeria/
 ## Contact information
 If you want to collaborate with me , contact me on izered3@gmail.com.
 ## License and copyright
