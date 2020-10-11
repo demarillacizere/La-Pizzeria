@@ -45,3 +45,15 @@ h1{position:relative;
 h2,h4,button{
     color:rgb(255, 126, 6);
 }
+#medium-toppings,#large-toppings{
+    display:none;
+}
+button{
+    background-color:rgb(255, 126, 6);
+}
+#float-image{
+    width:30%;
+    height:100%;
+    float: right;
+    margin-left: 10px;
+}
