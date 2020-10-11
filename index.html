@@ -11,18 +11,19 @@
         <header>
             <h1>La Pizzeria</h1><br><br>
             <p>Enjoy the esquisite taste of our fresh cooked pizza</p><br>
-                <div class="grid">
-                    <div class="div1"></div>
-                    <div class="div2"></div>
-                    <div class="div3"></div>
-                    <div class="div4"></div>
+            <div id="imgs-div">
+                <div class="pizza-imgs">
+                    <div class="div1 imgs"></div>
+                    <div class="div2 imgs"></div>
+                    <div class="div3 imgs"></div>
+                    <div class="div4 imgs"></div>
                 </div><br>
-                <div class="grid">
-                    <div class="div5"></div>
-                    <div class="div6"></div>
-                    <div class="div7"></div>
-                    <div class="div8"></div>
+                <div class="pizza-imgs container">
+                    <div class="div5 imgs"></div>
+                    <div class="div6 imgs"></div>
+                    <div class="div7 imgs"></div>
                 </div><br>
+            </div>
         </header><br>
     </body>
     <div class='container'>
@@ -49,7 +50,7 @@
                     <div class='custom-control custom-radio'><input id="crispy" class="custom-control-input" type="radio" name="crust" value="1000" required><label class="custom-control-label" for="crispy">Crispy - 1000 rwf</label></div>
                     <div class='custom-control custom-radio'><input id="stuffed" class="custom-control-input"type="radio" name="crust" value="1500"><label class="custom-control-label" for="stuffed">Stuffed - 1500 rwf</label></div>
                     <div class='custom-control custom-radio'><input id="glutten-free" class="custom-control-input" type="radio" name="crust" value="1500"><label class="custom-control-label" for="glutten-free">Glutten-free - 1500 rwf</label></div>
-                </div><br>
+                </div>
                 <div class="form-group mb-4" id="toppings">
                     <div id="small-toppings">
                         <label>Please do choose the toppings for your small pizza</label><br>
@@ -67,13 +68,13 @@
                             <input id="sauce" type="checkbox" name="topping" value="1500"><label for="sauce">Sauce - 1500 rwf</label><br>
                     </div>
                 </div>
-                <button class="btn btn-outline-success"type="submit" id="submit">Comfirm your order</button><br>
+                <button class="btn btn-outline-success"type="submit" id="submit">Comfirm your order</button>
                 <div id="output"></div>
             </form>
-            <button id="add-order" class="btn btn-outline-success">Add another order</button>
+        </div><br>
+        <button id="add-order" class="btn btn-outline-success">Add another order</button>
             <button class='btn btn-outline-primary' id="checkout">Checkout</button><br><br>
             <div id="cart"></div><br>
-        </div>
     </div>
     <footer>
         Contact us:

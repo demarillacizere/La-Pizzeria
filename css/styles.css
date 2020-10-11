@@ -11,9 +11,14 @@ h1{position:relative;
     padding:20px;
     color:white;
 }
-.grid{
+#imgs-div{
+    position:-webkit- sticky;
+    position: sticky;
+    top:0;
+}
+.pizza-imgs{
     display:flex;
-    justify-content: space-evenly;
+    justify-content:space-around;
 }
 .div1{
     background-image: url('img/Pizza salad.jpg');
@@ -36,7 +41,7 @@ h1{position:relative;
 .div7{
     background-image: url('img/Pizza1.jpg');
 }
-.grid div{
+.imgs{
     background-repeat: no-repeat;
     background-size: cover;
     width:250px;
@@ -50,6 +55,11 @@ h2,h4,button{
 }
 button{
     background-color:rgb(255, 126, 6);
+}
+.btn-outline-primary{
+    background-color:rgb(255, 126, 6);
+    color:white;
+    border:none;
 }
 #float-image{
     width:30%;
