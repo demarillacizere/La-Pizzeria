@@ -64,3 +64,10 @@ button{
     border:silver solid 1px;
     border-radius: 5px;
 }
+footer{
+    text-align: center;
+    background-color:rgb(255, 126, 6);
+    color:white;
+    padding:20px;
+    width:100%;
+}
