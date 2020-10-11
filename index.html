@@ -10,7 +10,7 @@
     <body>
         <header>
             <h1>La Pizzeria</h1><br><br>
-            <p>Enjoy the esquisite taste of our fresh cooked pizza</p><br>
+            <p id="header-par">Enjoy the esquisite taste of our fresh cooked pizza</p><br>
             <div id="imgs-div">
                 <div class="pizza-imgs">
                     <div class="div1 imgs"></div>
@@ -59,28 +59,33 @@
                     </div>
                     <div id="medium-toppings">
                         <label>Please do choose the toppings for your medium pizza</label><br>
-                        <input id="salad" type="checkbox" name="topping" value="700" ><label for="salad">Salad - 700 rwf</label><br>
-                        <input id="sauce" type="checkbox" name="topping" value="1200"><label for="sauce">Sauce - 1200 rwf</label><br>
+                        <input id="salad" type="checkbox" name="topping" value="700" > <label for="salad">Salad - 700 rwf</label><br>
+                        <input id="sauce" type="checkbox" name="topping" value="1200"> <label for="sauce">Sauce - 1200 rwf</label><br>
                     </div>
                     <div id="large-toppings">
                             <label>Please do choose the toppings for your large pizza</label><br>
-                            <input id="salad" type="checkbox" name="topping" value="1000" ><label for="salad">Salad - 1000 rwf</label><br>
-                            <input id="sauce" type="checkbox" name="topping" value="1500"><label for="sauce">Sauce - 1500 rwf</label><br>
+                            <input id="salad" type="checkbox" name="topping" value="1000" > <label for="salad">Salad - 1000 rwf</label><br>
+                            <input id="sauce" type="checkbox" name="topping" value="1500"> <label for="sauce">Sauce - 1500 rwf</label><br>
                     </div>
                 </div>
                 <button class="btn btn-outline-success"type="submit" id="submit">Comfirm your order</button>
                 <div id="output"></div>
             </form>
         </div><br>
-        <button id="add-order" class="btn btn-outline-success">Add another order</button>
-            <button class='btn btn-outline-primary' id="checkout">Checkout</button><br><br>
-            <div id="cart"></div><br>
+        <button id="add-order" class="btn btn-outline-success">Add another order</button>&nbsp;&nbsp;
+        <button class='btn btn-outline-primary' id="checkout">Checkout</button><br><br>
+        <div id="delivery" class="form-group mb-4">
+            <label>Do you want your orders delivered?</label>
+            <div class='custom-control custom-radio'><input id="yes" class="custom-control-input" type="radio" name="delivery" value="yes" required><label class="custom-control-label" for="yes">Yes</label></div>
+            <div class='custom-control custom-radio'><input id="no" class="custom-control-input"type="radio" name="delivery" value="no"><label class="custom-control-label" for="no">No</label></div>
+        </div><br>
+        <div id="cart"></div><br>
     </div>
     <footer>
         Contact us:
         +25087635647<br>
         lapizzeria@gmail.com<br>
         La Pizzeria<br>
-        &Copyright 2020
+        &copy Copyright 2020
     </footer>
 </html>

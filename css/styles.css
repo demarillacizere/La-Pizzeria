@@ -11,10 +11,9 @@ h1{position:relative;
     padding:20px;
     color:white;
 }
-#imgs-div{
-    position:-webkit- sticky;
-    position: sticky;
-    top:0;
+#header-par{
+    font-weight: bolder;
+    font-size: 32px;
 }
 .pizza-imgs{
     display:flex;
@@ -74,10 +73,15 @@ button{
     border:silver solid 1px;
     border-radius: 5px;
 }
+#delivery{
+    display:none;
+}
 footer{
     text-align: center;
     background-color:rgb(255, 126, 6);
     color:white;
     padding:20px;
     width:100%;
+    font-size: 16px;
+    color:darkslategrey;
 }

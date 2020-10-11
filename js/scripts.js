@@ -53,7 +53,7 @@ $(document).ready(function(){
         else{
             newOrder = new Order(sizePrice,crustPrice,totalTopping);
             ordersArr.push(newOrder.totalPrice());
-        $(this).last().text('Total price for your order: ' + newOrder.totalPrice());
+        $(this).last().text('Total price for your order: ' + newOrder.totalPrice() + " rwf");
         }
     });
     $('.container').on('click','#checkout',function(){
@@ -61,11 +61,19 @@ $(document).ready(function(){
         for (let index = 0; index < ordersArr.length; index++) {
             sum += ordersArr[index]; 
         }
-        $('#cart').text("You have made " + ordersArr.length + " order(s) worth a total price of " + sum);
+        var deliveryChoice=confirm('Do you want your order delivered ? The delivery cost is 500 rwf');
+        if(deliveryChoice==true){
+            prompt("Enter your address (house number , street number and city)");
+            alert("Your order will be delivered at your location");
+            $('#cart').text("You have made " + ordersArr.length + " order(s) which will be delivered at a total price of " + (sum+500) + " rwf");
+        }
+        else{
+            $('#cart').text("You have made " + ordersArr.length + " order(s) worth a total price of " + sum + " rwf");
+        }
     });
     $('.container').on('click','#add-order',function(){
         $('#new-orders').append(
-       '<form>' +
+       '<br><form>' +
         '<div class="form-group mb-4">' +
             '<label>Choose the size</label>' +
             '<select id="size" class="form-control">' +
@@ -79,7 +87,7 @@ $(document).ready(function(){
             '<div class="custom-control custom-radio"><input id="crispy"class="custom-control-input" type="radio" name="crust" value="1000" required><label class="custom-control-label" for="crispy">Crispy - 1000</label></div>' +
             '<div class="custom-control custom-radio"><input id="stuffed" class="custom-control-input" type="radio" name="crust" value="1500"><label for="stuffed" class="custom-control-label">Stuffed - 1500 rwf</label></div>' +
             '<div class="custom-control custom-radio"><input id="glutten-free" class="custom-control-input" type="radio" name="crust" value="1500"><label for="glutten-free" class="custom-control-label">Glutten-free - 1500</label></button>' +
-        '</div>' +
+        '</div><br>' +
         '<div class="form-group mb-4">' +
             '<div id="small-toppings" class="form-group mb-4">' +
                 '<label>Please do choose the toppings for your small pizza</label><br>' +
@@ -99,7 +107,7 @@ $(document).ready(function(){
         '</div>' +
         '<button class="btn btn-outline-success" type="submit" id="submit">Comfirm your order</button><br>' +
         '<div id="output"></div>' +
-    '</form><br><br>'
+    '</form>'
         )
     })
 })
