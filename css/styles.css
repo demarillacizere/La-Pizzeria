@@ -1,0 +1,13 @@
+header{
+    text-align:center;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1{position:relative;
+    top:30px;
+    background-color:rgb(255, 126, 6);
+    padding:20px;
+    color:white;
+}
